@@ -1,5 +1,5 @@
 # Learning Convex Decomposition via Feature Fields
-**[Project](https://research.nvidia.com/labs/sil/projects/learning-convex-decomp/)**
+**[Project](https://research.nvidia.com/labs/sil/projects/learning-convex-decomp/)**|**[Video](https://www.youtube.com/watch?v=ziSyNg3BACI&t=8s)**|**[Arxiv](https://arxiv.org/abs/2603.09285/)**
  
 Yuezhi Yang, Qixing Huang, Mikaela Angelina Uy*, Nicholas Sharp*
  
@@ -11,7 +11,7 @@ CVPR 2026 (Oral)
 This work proposes a new formulation to the long-standing problem of convex decomposition through learning feature fields, enabling the first feed-forward model for open-world convex decomposition. Our method produces high-quality decompositions of 3D shapes into a union of convex bodies, which are essential to accelerate collision detection in physical simulation, amongst many other applications. The key insight is to adopt a feature learning approach and learn a continuous feature field that can later be clustered to yield a good convex decomposition via our self-supervised, purely-geometric objective derived from the classical definition of convexity. Our formulation can be used for single shape optimization, but more importantly, feature prediction unlocks scalable, self-supervised learning on large datasets resulting in the first learned open-world for convex decomposition. Experiments show that our decompositions are higher-quality than alternatives and generalize across open-world objects as well as across representations to meshes, CAD models, and even Gaussian splats.
 
 ## Pretrained Model
-The link to download our pretrained model is here: [Checkpoint](). Please download and put it under ./ckpt directory.
+The link to download our pretrained model is here: [Checkpoint](https://huggingface.co/mikaelaangel/learning-convex-decomp-ckpt/tree/main). Please download model_convexdecomp.ckpt and put it under ./ckpt directory.
 
 ## Environment Set-up
 We use Python 3.10 with PyTorch 2.4 and CUDA 12.4. The environment and required packages can be installed individually as follows:
