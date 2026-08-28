@@ -42,12 +42,12 @@ python test.py -c ./configs/<config_name> result_name <result_name> dataset.inpu
 
 For a single mesh file:
 ```
-python test.py -c configs/example.yaml result_name result_data dataset.input_path ./data/camel_mc.ply ckpt_path ./ckpt/model_objaverse.ckpt
+python test.py -c configs/example.yaml result_name result_data dataset.input_path ./data/camel_mc.ply ckpt_path ./ckpt/model_convexdecomp.ckpt
 ```
 
 For a data directory:
 ```
-python test.py -c configs/example.yaml result_name result_data dataset.input_path ./data ckpt_path ./ckpt/model_objaverse.ckpt
+python test.py -c configs/example.yaml result_name result_data dataset.input_path ./data ckpt_path ./ckpt/model_convexdecomp.ckpt
 ```
 
 
@@ -58,7 +58,7 @@ python test.py -c ./configs/<config_name> result_name <result_name> dataset.inpu
 ```
 For example:
 ```
-python test.py -c configs/example.yaml result_name exp_data dataset.input_path ./data ckpt_path ./ckpt/model_objaverse.ckpt decomp.eps 0.10 decomp.max_parts 50
+python test.py -c configs/example.yaml result_name exp_data dataset.input_path ./data ckpt_path ./ckpt/model_convexdecomp.ckpt decomp.eps 0.10 decomp.max_parts 50
 ```
 
 The algorithm works best if input mesh is manifold and watertight. An optional watertight remesh pre-process is:
